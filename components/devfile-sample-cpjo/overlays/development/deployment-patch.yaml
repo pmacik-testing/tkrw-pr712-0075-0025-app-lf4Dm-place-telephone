@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-cpjo
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0025-tenant/tkrw-pr712-0075-0025-app/devfile-sample-cpjo@sha256:fc8c4e0ac0ec4cc67b128fbadf589b6b978b5f849e6b24fabf230d99f4f71ef5
+        name: my-nodejs
+        resources: {}
+status: {}
